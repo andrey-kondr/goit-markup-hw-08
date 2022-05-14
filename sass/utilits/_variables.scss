@@ -1,0 +1,29 @@
+
+/* основной цвет текста #757575 */
+/* вторичный цвет текста #212121 */
+/* служебный цвет текста rgba(255, 255, 255, 0.6) */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+
+/* вторичный цвет фона #F5F4FA */
+/* цвет фона служебный #2F303A */
+/* цвет фона иконок футера rgba(255, 255, 255, 0.1)*/
+
+/* цвет иконок #AFB1B8 */
+
+/* цвет текста плейсхолдера rgba(117, 117, 117, 0.5); */
+
+$primaryTextColor: #757575;
+$secondaryTextColor: #212121;
+$serviceTextColor: rgba(255, 255, 255, 0.6);
+$accentColor: #2196F3;
+$secondaryFontColor: #F5F4FA;
+$serviceFontColor: #2F303A;
+$dutyWhiteColor: #FFFFFF;
+
+$iconsColor: #AFB1B8;
+$footerIconsFontColor: rgba(255, 255, 255, 0.1);
+
+$mainAnimation: cubic-bezier(0.4, 0, 0.2, 1);
+
+$placeholderColor: rgba(117, 117, 117, 0.5);

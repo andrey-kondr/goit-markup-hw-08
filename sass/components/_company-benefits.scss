@@ -1,0 +1,71 @@
+.company-benefits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media (min-width: 1200px) {
+        padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.benefits {
+    @media (min-width: 1200px) {
+        display: flex;
+    }
+
+    @media (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    }
+
+    &__card {
+        margin-bottom: 30px;
+
+        @media (min-width: 768px) {
+            width: calc((100% - 30px) / 2 );
+        }
+        
+        @media (min-width: 1200px) {
+            width: calc((100% - 90px) / 4 );
+            margin-right: 30px;
+        }
+    }
+
+    &__card:last-child {
+        margin-bottom: 0;
+
+        @media (min-width: 1200px) {
+            margin-right: 0;
+        }
+    }
+
+    &__icon-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 120px;
+        margin-bottom: 30px;
+        
+        background-color: $secondaryFontColor;
+        text-align: center;
+    }
+
+    &__name {
+        margin-bottom: 10px;
+        
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+
+    &__description {
+        line-height: 1.7;
+    }
+}

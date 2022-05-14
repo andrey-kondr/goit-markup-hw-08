@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+
+    background-color: $dutyWhiteColor;
+    color: $primaryTextColor;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+/* убирает отображение значка пункта списка */
+li {
+    list-style: none;
+}
+
+/* убирает подчеркивание ссылки */
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
+
+/* убирает визуальное отображение заголовков секций */
+.hiden-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.title-color {
+    color: $secondaryTextColor;
+}
+
+h1, h2, h3, p, section, ul {
+    margin: 0;
+    padding: 0;
+}

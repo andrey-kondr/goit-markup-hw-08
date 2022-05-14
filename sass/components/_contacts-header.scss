@@ -1,0 +1,39 @@
+.contacts {
+
+    // descktop
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    &__item:not(:last-child) {
+        // descktop
+        @media (min-width: 768px) {
+            margin-right: 50px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: $primaryTextColor;
+        fill: $primaryTextColor;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $accentColor;
+        fill: $accentColor;
+
+        transition: color 250ms $mainAnimation,
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon {
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+}

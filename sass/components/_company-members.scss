@@ -1,0 +1,87 @@
+.company-members {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $secondaryFontColor;
+
+    @media (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.members-title {
+    margin-bottom: 30px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
+.members {
+    @media (min-width: 780px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        justify-content: space-around;
+    }
+
+    @media (min-width: 1200px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__item {
+        background-color: $dutyWhiteColor;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
+        @media (min-width: 768px) and (max-width: 1200px) {
+            width: calc((100% - 30px) / 2 );
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item:not(:last-child) {
+        @media (min-width: 1200px) {
+            margin-right: 30px;
+        }
+    }
+
+    &__photo {
+        width: 100%;
+
+        @media (min-width: 1200px) {
+            width: 270px;
+        }
+    }
+
+    &__card {
+        padding: 30px 20px;
+    }
+
+    &__unit {
+        margin-bottom: 10px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+    }
+
+    &__speciality {
+        margin-bottom: 16px;
+
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+    }
+}

@@ -1,0 +1,84 @@
+.subscribe {
+    color: $dutyWhiteColor;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    @media (min-width: 768px) and (max-width: 1200px) {
+        width: 450px;
+        margin: 0 auto;;
+    }
+
+    &__slogan {
+        margin-bottom: 20px;
+    }
+
+    &__label {
+        margin-right: 12px;
+        padding-left: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        height: 50px;
+        width: 358px;
+
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: $serviceTextColor;
+        background-color: $serviceFontColor;
+
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+
+        @media (min-width: 768px) and (max-width: 1200px) {
+            margin-right: 0;
+        }
+    }
+
+    &__button {
+        padding: 0;
+        
+        width: 200px;
+        height: 50px;
+
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: $dutyWhiteColor;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+    
+        @media (max-width: 1200px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__button:hover,
+    &__button:focus {
+        color: $serviceTextColor;
+        transition: color 250ms $mainAnimation;
+    }
+
+    &__icon {
+        fill: $dutyWhiteColor;
+        margin-left: 10px;
+    }
+
+    &__button:hover &__icon,
+    &__button:focus &__icon {
+        fill: $serviceTextColor;
+        transition: fill 250ms $mainAnimation;
+    }
+}
+

@@ -1,0 +1,25 @@
+@import './utilits/variables';
+@import './components/general-styles';
+@import './components/container';
+@import './components/logo';
+@import './components/page-header';
+@import './components/main-navigation';
+@import './components/contacts-header';
+@import './components/hero-section';
+@import './components/company-benefits';
+@import './components/company-activities';
+@import './components/company-members';
+@import './components/members-socials';
+@import './components/company-clients';
+@import './components/footer';
+@import './components/company-socials';
+@import './components/subscription-form';
+
+// company's portfolio page
+@import './components/portfolio-page';
+@import './components/portfolio-button-list';
+@import './components/portfolio';
+
+// modal window for ordering company services
+@import './components/modal-window'; 
+@import './components/modal-window-form';

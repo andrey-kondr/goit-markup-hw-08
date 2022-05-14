@@ -1,0 +1,160 @@
+.form-name {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondaryTextColor;
+}
+
+.input-area {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 4px;
+    display: block;
+}
+
+.input-name {
+    padding-left: 42px;
+    padding-right: 12px;
+
+    width: 448px;
+    height: 40px;
+
+    color: $primaryTextColor;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms $mainAnimation;
+    outline: none;
+
+    /* make cursor color */
+    /* caret-color: $accentColor; */
+}
+
+.form-icon {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    transform: translateY(+50%);
+    transition: fill 250ms $mainAnimation,
+    border-color 250ms $mainAnimation;
+}
+
+.input-area:focus-within,
+.input-area:focus-within .input-name,
+.input-name:hover,
+.input-area:hover .form-icon,
+.form-icon:hover ~ .input-name {
+    border-color: $accentColor;
+    fill: $accentColor;
+}
+
+.comment {
+    margin-top: 4px;
+    margin-bottom: 30px;
+    padding: 12px 16px;
+
+    height: 120px;
+    resize: none;
+    transition: border-color 250ms $mainAnimation;
+    outline: none;
+    
+    // make cursor color
+    // caret-color: $accentColor;
+    
+    &:hover, 
+    &:focus {
+        border-color: $accentColor;
+    }
+
+    &::placeholder {
+        color: $placeholderColor;
+        margin-left: 16px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+    }
+}
+
+.checkbox-label {
+    position: relative;
+
+    margin-bottom: 20px;
+    padding-left: 38px;
+
+    display: inline-block;
+}
+
+.checkbox {
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.icon-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin-left: 14px;
+
+    width: 16px;
+    height: 15px;
+    border: 2px solid $secondaryTextColor;
+    border-radius: 2px;
+
+    .checkbox:checked ~ & {
+        background-color: $accentColor;
+        border-color: $accentColor;
+
+        background-image: url('../images/check.svg');
+        background-size: contain;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}
+
+.contract-conditions {
+    color: $accentColor;
+    text-decoration: underline;
+}
+
+.send-button {
+    padding: 0;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $dutyWhiteColor;
+    background: #2196F3;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow 250ms $mainAnimation,
+    background-color 250ms $mainAnimation;
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}

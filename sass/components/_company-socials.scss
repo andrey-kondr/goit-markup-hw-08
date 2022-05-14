@@ -1,0 +1,37 @@
+.join-us {
+    margin-bottom: 60px;
+    
+    color: $dutyWhiteColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    // @media (min-width: 768px) {
+    //     margin-right: 90px;
+    // }
+
+    @media (min-width: 1200px) {
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+
+    .socials__icon {
+        fill: $dutyWhiteColor;
+    }
+
+    .socials__link {
+        background-color: $footerIconsFontColor;
+        transition: background-color 250ms $mainAnimation;
+    }
+
+    .socials__link:hover,
+    .socials__link:focus {
+        background-color: $accentColor;
+    }
+}
+
+.join-us-slogan {
+    margin-bottom: 20px;
+}

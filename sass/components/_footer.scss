@@ -1,0 +1,54 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $serviceFontColor;
+}
+
+.footer-area {
+    text-align: center;
+
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    @media (min-width: 1200px) {
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: start;
+    }
+}
+
+.address-area {
+    margin-bottom: 60px;
+
+    @media (min-width: 1200px) {
+        margin-right: 70px;
+    }
+}
+
+.address {
+    line-height: 1.7;
+    font-style: normal;
+
+    &__item:not(:last-child) {
+    margin-bottom: 9px;
+    }
+
+    &__postal {
+        color: white;
+    }
+
+    &__point {
+        color: $serviceTextColor;
+        transition: color 250ms $mainAnimation;
+    }
+
+    &__point:hover,
+    &__point:focus {
+        color: $accentColor;
+    }
+}
