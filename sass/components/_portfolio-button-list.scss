@@ -1,11 +1,31 @@
 .buttons-list {
+    margin-bottom: 40px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 
-    margin-bottom: 50px;
+    @media (min-width: 768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
 
-    li:not(:last-child) {
+    @media (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+
+    &__item {
         margin-right: 8px;
+
+        @media (max-width: 479px) {
+            margin-bottom: 15px;
+        }
+        
+        @media (min-width: 480px) and (max-width: 768px) {
+            margin-bottom: 15px;
+        }
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
     }
 }
 
