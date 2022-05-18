@@ -13,6 +13,7 @@
     visibility: hidden;
     transition: opacity 250ms $mainAnimation,
     visibility 250ms $mainAnimation;
+    overflow-y: scroll;
 
     &.is-hidden {
         opacity: 1;
@@ -22,18 +23,22 @@
 }
 
 .modal {
+    margin-right: 15px;
+    margin-left: 15px;
+    position: relative;
+    padding: 40px;
+    margin-top: 93px;
+    transition: transform 250ms $mainAnimation;
+    background-color: $dutyWhiteColor;
+
+    @media (min-width: 768px) {
     position: absolute;
     top: 50%;
     left: 50%;
-
-    padding: 40px;
-
     width: 528px;
     height: 581px;
-
-    background-color: $dutyWhiteColor;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms $mainAnimation;
+    }
 }
 
 .modal-button {

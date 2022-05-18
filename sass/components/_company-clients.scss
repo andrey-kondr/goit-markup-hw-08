@@ -27,6 +27,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-right: -15px;
+        margin-left: -15px;
     }
     
     @media (min-width: 1200px) {
@@ -37,21 +39,42 @@
         margin-bottom: 30px;
 
         @media (min-width: 480px) {
-            width: calc((100% - 30px) / 2 );
+            width: calc((100% - 60px) / 2 );
         }
 
         @media (min-width: 768px) {
-            width: calc((100% - 60px) / 3 );
+            width: calc((100% - 90px) / 3 );
         }
 
         @media (min-width: 1200px) {
             margin-right: 30px;
             margin-bottom: 0;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    &__item:nth-child(4) {
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item:nth-child(5) {
+        @media (min-width: 480px) {
+            margin-bottom: 0;
         }
     }
 
     &__item:last-child { 
-        margin-right: 0px;
+        
+        @media (min-width: 480px) {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 1200px) {
+            margin-right: 0;
+        }
     }
 
     &__link {
@@ -59,16 +82,22 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        width: 170px;
+        width: 210px;
         height: 92px;
-
         fill: $iconsColor;
         transition: fill 250ms $mainAnimation,
         color 250ms $mainAnimation;
 
         border: 1px solid $iconsColor;
         border-radius: 4px;
+
+        @media (min-width: 768px) {
+            width: 226px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 170px;
+        }
     }
 
     &__link:hover,

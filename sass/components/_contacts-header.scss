@@ -1,15 +1,33 @@
 .contacts {
+    display: none;
+    text-align: center;
 
-    // descktop
     @media (min-width: 768px) {
+            display: block;
+    }
+
+    @media (min-width: 1200px) {
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
 
-    &__item:not(:last-child) {
-        // descktop
+    &__item {
+        margin-bottom: 10px;
+
+        @media (min-width: 1200px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item:last-child {
         @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__item:not(:last-child) {
+        @media (min-width: 1200px) {
             margin-right: 50px;
         }
     }
@@ -33,7 +51,11 @@
     }
 
     &__icon {
+        display: none;
         margin-right: 10px;
         vertical-align: middle;
+        @media (min-width: 1200px) {
+            display: block;
+        }
     }
 }

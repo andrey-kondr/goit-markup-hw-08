@@ -20,7 +20,7 @@
     padding-left: 42px;
     padding-right: 12px;
 
-    width: 448px;
+    width: 100%;
     height: 40px;
 
     color: $primaryTextColor;
@@ -35,6 +35,10 @@
 
     /* make cursor color */
     /* caret-color: $accentColor; */
+
+    @media (min-width: 768px) {
+        width: 448px;
+    }
 }
 
 .form-icon {
@@ -151,6 +155,10 @@
     cursor: pointer;
     transition: box-shadow 250ms $mainAnimation,
     background-color 250ms $mainAnimation;
+
+    @media (min-width: 240px) and (max-width: 320px) {
+        width: 100%;
+    }
 
     &:hover,
     &:focus {

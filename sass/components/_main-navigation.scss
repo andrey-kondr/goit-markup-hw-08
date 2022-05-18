@@ -1,23 +1,31 @@
 .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    @media (min-width: 768px) {
+        display: block;
+    }
 
-    // descktop
     @media (min-width: 768px) {
         display: flex;
         align-items: center;
     }
     
     &__list {
+        display: none;
+        // @media (max-width: 768px) {
+        //     display: none;
+        // }
 
-        // descktop
         @media (min-width: 768px) {
-        display: flex;
-        justify-content: center;
-        margin-left: 93px;
+            display: flex;
+            justify-content: center;
+            margin-left: 93px;
         }
     }
 
     &__item:not(:last-child) {
-        // descktop
         @media (min-width: 768px) {
             margin-right: 50px;
         }
@@ -72,5 +80,35 @@
 
     &.main-nav__link::after {
         opacity: 1;
+    }
 }
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    transition: fill 250ms $mainAnimation;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-button:hover,
+.menu-button:focus {
+    fill: $accentColor;
+}
+
+.menu-button .icon-cross {
+    display: none;
+}
+
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
 }

@@ -4,31 +4,35 @@
 
     @media (min-width: 1200px) {
         padding-top: 94px;
-    padding-bottom: 94px;
+        padding-bottom: 94px;
     }
 }
 
 .benefits {
-    @media (min-width: 1200px) {
-        display: flex;
-    }
-
     @media (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-right: -15px;
+        margin-left: -15px;
     }
 
     &__card {
         margin-bottom: 30px;
 
         @media (min-width: 768px) {
-            width: calc((100% - 30px) / 2 );
+            width: calc((100% - 60px) / 2 );
         }
         
         @media (min-width: 1200px) {
-            width: calc((100% - 90px) / 4 );
-            margin-right: 30px;
+            width: calc((100% - 120px) / 4 );
+            margin-bottom: 0;
+        }
+    }
+
+    &__card:nth-child(3) {
+        @media (min-width: 768px) {
+            margin-bottom: 0;
         }
     }
 
@@ -54,14 +58,14 @@
 
     &__name {
         margin-bottom: 10px;
-        
+        text-align: center;
         font-size: 14px;
         font-weight: 700;
         line-height: 1.14;
         text-transform: uppercase;
 
-        @media (max-width: 768px) {
-            text-align: center;
+        @media (min-width: 768px) {
+            text-align: start;
         }
     }
 
