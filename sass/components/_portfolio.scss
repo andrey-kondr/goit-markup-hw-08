@@ -4,21 +4,21 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-right: -15px;
-        margin-left: -15px;
+        // margin-right: -15px;
+        // margin-left: -15px;
     }
     
 
     &__card {
         margin-bottom: 30px;
 
-        @media (min-width: 768px) {
-            width: calc((100% - 60px) / 2);
-        }
+        // @media (min-width: 768px) {
+        //     width: calc((100% - 60px) / 2);
+        // }
 
-        @media (min-width: 1200px) {
-            width: calc((100% - 90px) / 3);
-        }
+        // @media (min-width: 1200px) {
+        //     width: calc((100% - 90px) / 3);
+        // }
     }
 
     &__card:last-child {
@@ -56,7 +56,7 @@
     &__overlay-area {
         position: relative;
         overflow: hidden;
-        width: 450px;
+        width: 100%;
         height: 294px;
 
         @media (min-width: 768px) {
