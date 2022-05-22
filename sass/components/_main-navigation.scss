@@ -1,5 +1,4 @@
 .logo-container {
-    margin-right: auto;
     padding: 16px 15px;
     display: flex;
     justify-content: space-between;
@@ -13,7 +12,6 @@
         top: 0;
         left: 0;
         width: 100%;
-        display: none;
         padding: 48px 40px;
         background-color: $dutyWhiteColor;
         transition: transform 250ms $mainAnimation;

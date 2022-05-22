@@ -1,14 +1,15 @@
 .contacts {
 
     @media (max-width: 767px) {
-        display: inline-block;
+        display: inline-flex;
+        flex-direction: column-reverse;
         margin-bottom: 64px;
     }
 
     @media (min-width: 768px) {
         display: block;
         text-align: center;
-        margin-left: 84px;
+        margin-left: 75px;
     }
 
     @media (min-width: 1200px) {
@@ -19,7 +20,13 @@
     }
 
     &__item {
-        margin-bottom: 10px;
+        @media (max-width: 767px) {
+            margin-bottom: 32px;
+        }
+        
+        @media (min-width: 768px) {
+            margin-bottom: 10px;
+        }
 
         @media (min-width: 1200px) {
             margin-bottom: 0;
@@ -34,7 +41,7 @@
     
     &__item:not(:last-child) {
         @media (max-width: 767px) {
-            margin-bottom: 32px;
+            margin-bottom: 0;
         }
         
         @media (min-width: 1200px) {
