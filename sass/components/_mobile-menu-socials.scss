@@ -1,6 +1,6 @@
 .mob-socials__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
 
@@ -9,17 +9,16 @@
     }
 }
 
+.mob-socials__link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: $accentColor;
+    }
+
 .mob-socials__link::after {
-    content: '|';    
+    content: '|';
     margin: 10px;
     color:  rgba(33, 33, 33, 0.2);
-}
-
-.mob-socials__link {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-
-    color: $accentColor;
 }

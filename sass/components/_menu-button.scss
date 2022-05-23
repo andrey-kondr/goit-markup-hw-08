@@ -6,7 +6,7 @@
     background-color: transparent;
     transition: fill 250ms $mainAnimation,
     transform 250ms $mainAnimation;
-    z-index: 1;
+    z-index: 2;
 
     @media (min-width: 768px) {
         display: none;

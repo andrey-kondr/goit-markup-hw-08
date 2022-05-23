@@ -15,6 +15,7 @@
         padding: 48px 40px;
         background-color: $dutyWhiteColor;
         transition: transform 250ms $mainAnimation;
+        z-index: 1;
     }
 
     @media (min-width: 768px) {
@@ -47,7 +48,11 @@
     }
 
     &__item {   
-        height: 80px;
+        height: auto;
+
+        @media (min-width: 768px) {
+            height: 80px;
+        }
     }
 
     &__item:not(:last-child) {
